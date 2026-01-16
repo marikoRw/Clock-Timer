@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock-Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
 </head>
 <body>
 
     <h1 class="top-words">Stop Watch</h1>
 
     <div class="container">
-
-        <div class="controls">
-            <button class="buttons" onclick="startstop()">Start</button>
-            <button class="buttons" onclick="resetClock()">Reset</button>
-        </div>
         
         <div class="smaller-container">
             
@@ -25,7 +22,7 @@
             <div class="labels">
                 <span class="title">HOURS</span>
                 <span class="title">MINUTES</span>
-                <span class="title">SECONDS</span>
+                <!-- <span class="title">SECONDS</span> -->
             </div>
 
             <div class="display">
@@ -39,8 +36,14 @@
                     <span class="next">01</span>
                 </div>
             </div>
-        
+
         </div>
+
+        <div class="controls">
+                <button class="buttons start" onclick="startstop()">Start</button>
+                <button class="buttons reset" onclick="resetClock()">Reset</button>
+        </div>
+
     </div>
     
 </body>
